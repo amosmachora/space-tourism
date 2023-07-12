@@ -1,0 +1,111 @@
+.technology-container {
+  padding: 4% 0 4% 8%;
+}
+.numbers {
+  height: var(--numbers);
+  justify-content: space-between;
+}
+.numbers > * {
+  position: relative;
+  padding: 25px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.numbers > *:hover {
+  border: 1px solid var(--white);
+}
+.space-capsule.Space.capsule,
+.space-capsule.Space.capsule h4,
+.port.Spaceport,
+.port.Spaceport h4,
+.launch.Launch.vehicle,
+.launch.Launch.vehicle h4 {
+  background-color: var(--white);
+  color: black;
+}
+
+.numbers h4 {
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+}
+.technology-image {
+  height: 400px;
+  object-fit: cover;
+}
+.technology-about {
+  height: var(--numbers);
+  justify-content: space-between;
+  padding: 0 10%;
+}
+.technology-name {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.technology-description {
+  font-size: 18px;
+  line-height: 32px;
+  width: 80%;
+}
+@media screen and (max-width: 1150px) {
+  .technology-container {
+    padding: unset;
+  }
+  .technology-body {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 0 6% 0;
+  }
+  .numbers {
+    flex-direction: row;
+    height: unset;
+    width: 27%;
+  }
+  .technology-description {
+    width: unset;
+  }
+  .technology-about {
+    text-align: center;
+    justify-content: unset;
+    height: unset;
+    margin: 40px 0px;
+    width: 80%;
+  }
+  .technology-name {
+    font-size: 40px;
+    --margin: 10px;
+    margin: var(--margin) 0px calc(var(--margin) * 2) 0px;
+  }
+  .technology-image {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .technology-body > div:first-child {
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .numbers {
+    width: 30%;
+  }
+  .technology-about {
+    width: 95%;
+  }
+  .technology-description {
+    width: auto;
+  }
+  .technology-image {
+    height: 24vh;
+  }
+  .technology-name {
+    font-size: 2rem;
+  }
+}

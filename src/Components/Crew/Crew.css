@@ -1,0 +1,143 @@
+.crew-container {
+  margin-top: 8.5vh;
+  margin-left: 11.5vw;
+  margin-right: 9.5vw;
+  position: absolute;
+  bottom: 0;
+  height: 80vh;
+  overflow: hidden;
+}
+.crew-body {
+  width: 50%;
+}
+.switch {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.17);
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+.switch:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.crew-flex {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.crew-image {
+  height: 90%;
+  object-fit: cover;
+  margin-left: 6vw;
+}
+.crew-role {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 2rem;
+  font-weight: 400;
+}
+.crew-name {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 15px 0;
+  width: 110%;
+}
+.crew-bio {
+  width: 80%;
+  font-size: calc(1rem + 2px);
+  line-height: 1.5rem;
+}
+.switches {
+  width: 10vw;
+  margin-top: 13vh;
+}
+.switch-four.Anousheh,
+.switch-three.Victor,
+.switch-two.Mark,
+.switch-one.Douglas {
+  background-color: var(--white);
+}
+.image-border {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .crew-container {
+    margin-top: 4vh;
+    height: unset;
+    position: unset;
+  }
+  .crew-flex {
+    flex-direction: column;
+  }
+  .crew-body {
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+  }
+  .crew-name {
+    width: unset;
+    font-size: 40px;
+  }
+  .crew-bio {
+    width: 52%;
+    margin: 0 auto;
+    line-height: 28px;
+    font-size: 1rem;
+  }
+  .switches {
+    position: unset;
+    margin: 5% auto;
+  }
+  .crew-image {
+    margin-left: unset;
+    position: absolute;
+    bottom: 0;
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  .crew-name {
+    font-size: 2rem;
+  }
+  .crew-flex {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .crew-image {
+    height: 40vh;
+    width: unset;
+    margin-top: 20px;
+    position: unset;
+  }
+  .crew-body {
+    position: relative;
+    padding: 10%;
+  }
+  .image-border {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 120%;
+    height: 1px;
+    background-color: var(--white);
+    transform: translateX(-20%);
+  }
+  .switches {
+    margin-top: 52px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vw;
+  }
+  .crew-bio {
+    width: 100%;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .crew-role {
+    margin-top: 74px;
+    font-size: 1.5rem;
+  }
+}

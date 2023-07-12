@@ -1,0 +1,104 @@
+nav {
+  margin-top: 40px;
+  position: relative;
+  width: 96%;
+  margin-left: auto;
+  height: 10vh;
+}
+ul {
+  list-style: none;
+}
+.nav-link {
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  height: 10vh;
+  line-height: 100%;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+.nav-link:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.35);
+  transition: color 500ms ease-in-out;
+}
+.main.main-active,
+.destination.destination-active,
+.crew.crew-active,
+.technology.technology-active {
+  border-bottom: 3px solid var(--white);
+}
+.nav-link p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.nav-link span {
+  font-weight: 700;
+  margin-right: 10px;
+}
+.nav-links {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 60%;
+  padding: 0px 8.5vw;
+}
+.line {
+  height: 1px;
+  width: 32vw;
+  border-bottom: 1px solid var(--white);
+  position: absolute;
+  right: 55vw;
+  opacity: 25%;
+}
+.hamburger {
+  height: 25px;
+  width: 25px;
+  display: none;
+  z-index: 10;
+}
+.small-screen-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  padding: 30% 10%;
+  height: 100vh;
+}
+.small-screen-nav > .nav-link {
+  height: unset;
+  margin-bottom: 5vh;
+  z-index: 100;
+}
+.small-screen-nav > .nav-link span {
+  display: unset;
+}
+
+@media screen and (max-width: 1150px) {
+  .nav-link span {
+    display: none;
+  }
+  nav {
+    margin-top: 0;
+  }
+  .nav-links {
+    width: 58vw;
+    padding: 0px 4.5vw;
+  }
+  .line {
+    display: none;
+  }
+  .logo {
+    margin: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-links {
+    display: none;
+  }
+  nav {
+    padding: 0 3%;
+  }
+  .hamburger {
+    display: initial;
+  }
+}

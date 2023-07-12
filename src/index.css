@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--white);
+}
+:root {
+  --primary: #0b0d17;
+  --secondary: #d0d6f9;
+  --white: #ffffff;
+  --numbers: 220px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bellefair", serif;
+}
+
+p,
+h5 {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
+}
+.capitalize {
+  text-transform: uppercase;
+}
+.padding-main {
+  padding: 0 8%;
+}
+.bellefair {
+  font-family: "Bellefair", serif;
+}
+.bluish {
+  color: var(--secondary);
+}
+.tab-title {
+  font-size: calc(2rem - 4px);
+  letter-spacing: 4.7px;
+}
+.tab-title span {
+  color: var(--white);
+  opacity: 25%;
+  margin-right: 10px;
+}
+.cursor {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+  .tab-title {
+    margin-left: 39px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tab-title {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
